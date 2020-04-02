@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+
+<head lang="pt-br">
+    <meta charset="utf-8">
+    <title>Malucos do Sealp</title>
+    <link type="text/css" rel="stylesheet" href="estilos.css">
+</head>
+
+<body>
+
+    <header class="page-header">
+        <div>
+            <img id="mds-logo" src="MDS.png" alt="Escudo MDS">
+            <img id="mds-modern" src="MDS Modern Logo.png" alt="MDS Logo Moderna">
+        </div>
+
+        <nav id="main-nav">
+            <ul>
+                <li><a href="#">Notícias</a></li>
+                <li><a href="#">Loja</a></li>
+                <li><a href="#">História</a></li>
+                <li><a href="#">Jogadores</a></li>
+            </ul>
+        </nav>
+        <nav id="login">
+            <ul>
+                <li><a href="#">Login</a></li>
+                <li><a href="#">|</a></li>
+                <li><a href="#">Seja Um Maluco</a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <section class="body">
+        <div class="carousel-container">
+            <div class="slide fade">
+                <img src="MDS Anúncio.jpg" alt="Anúncio de novos uniformes">
+                <div class="caption">
+                    <span>Novo uniforme para a temporada</span>
+                </div>
+            </div>
+
+            <div class="slide fade">
+                <img src="MDS Produto.jpg" alt="Produto uniforme">
+                <div class="caption">
+                    <span>Compre já seu uniforme</span>
+                </div>
+            </div>
+
+            <div class="slide fade">
+                <img src="MDS Reborn.jpg" alt="Reborn">
+                <div class="caption">
+                    <span>MDS REBORN</span>
+                </div>
+            </div>
+
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+        <br>
+
+        <!-- The dots -->
+        <div id="dots" style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+
+        <div class="row">
+            <div class="column">
+                <img src="treino.jpg" alt="Treino" />
+                <header class="news-header">
+                    <a href="#">Treinos Suspensos</a>
+                </header>
+                <article>
+                    <p>Treinos coletivos de sábado suspensos devido a pandemia do vírus COVID-19</p>
+                </article>
+            </div>
+            
+            <div class="column">
+                <img src="MDS Produto.jpg" alt="MDS Produto">
+                <header class="news-header">
+                    <a href="#">Uniforme 2020</a>
+                </header>
+                <article>
+                    <p>Novos uniformes 2020. Compre já o seu pelo site. Os modelos 2020 estarão à venda a partir de 13
+                        de março.
+                    </p>
+                </article>
+            </div>
+            
+            
+            <div class="column">
+                <header class="news-header">
+                    <a href="#">10 Anos MDS</a>
+                </header>
+                <article>
+                    <p>10 de maio comemoramos os 10 anos de <strong>MALUQUICE</strong>. Malucos do SEALP completa 10
+                        anos.
+                    </p>
+                </article>
+            </div>
+
+            <div class="column">
+                <header class="news-header">
+                    <a href="#">MDS Reborn</a>
+                </header>
+                <article>
+                    <p>MDS Reborn. No décimo ano de aniversário da equipe, o MDS preparou uma surpresa especial para
+                        seus integrantes.</p>
+                </article>
+            </div>
+
+            <div class="column">
+                <header class="news-header">
+                    <a href="#">Novidades para 2020</a>
+                </header>
+                <article>
+                    <p>Fique por dentro das novidades para este ano. Novo uniforme, nova casa, surpresas e muito mais.
+                    </p>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <script language="javascript" src="script.js"></script>
+
+</body>
+
+</html>
