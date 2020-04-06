@@ -1,6 +1,15 @@
-
+var timer = setInterval(function() {plusSlides(1)}, 5000)
 var slideIndex = 0;
 showSlides(slideIndex)
+
+const slideContainer = document.querySelector('[wm-slideshow]')
+slideContainer.onmouseover = () => {
+    clearInterval(timer)
+}
+
+slideContainer.onmouseout = () => {
+    timer = setInterval(function() {plusSlides(1)}, 5000)
+}
 
 // Next/previous controls
 function plusSlides(n) {
@@ -15,7 +24,7 @@ function showSlides(n) {
     let i;
     let slides = document.getElementsByClassName("slide");
     let dots = document.getElementsByClassName("dot");
-
+    
     if (n > slides.length) {
         slideIndex = 1
     }
@@ -33,6 +42,7 @@ function showSlides(n) {
     dots[slideIndex-1].className += " active";
 
 }
+
 
 /*function scrollFunction() {
     const newHeader = document.querySelector('header')
